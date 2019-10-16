@@ -1,0 +1,46 @@
+<%- include('./includes/start.ejs') %>
+
+<%- include('./includes/nav.ejs') %>
+
+<!-- loading -->
+<div class="loading">
+    <div class="spinner-border spinner"></div>
+</div>
+
+<% if (loggedIn) { %>
+<input type="text" id="loggedIn" hidden>
+<% } %>
+
+<div class="container mt-3">
+    <div class="row">
+        <div class="col col-md-6 offset-md-3 text-center">
+            <div class="alert" hidden>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="container mt-3">
+        <div class="row products-content d-flex justify-content-center">
+            <!-- products content -->
+        </div>
+
+        <div class="container pcontainer d-flex justify-content-center">
+            <ul class="pagination d-none">
+                <li class="page-item disabled">
+                    <a class="page-link">
+                        &laquo;
+                    </a>
+                </li>
+                <!-- pages -->
+                <li class="page-item last">
+                    <a class="page-link">
+                        &raquo;
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <script type="module" src="js/src/products.js"></script>
+    <%- include('./includes/end.ejs') %>

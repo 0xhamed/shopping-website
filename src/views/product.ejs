@@ -1,0 +1,53 @@
+<%- include('./includes/start.ejs') %>
+
+<%- include('./includes/nav.ejs') %>
+
+
+<% if (loggedIn) { %>
+<input type="text" id="loggedIn" hidden>
+<% } %>
+
+<div class="container mt-3">
+    <div class="row">
+        <div class="col col-md-6 offset-md-3 text-center">
+            <div class="alert" hidden>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- Page Content -->
+    <div class="container mt-5 text-center">
+
+        <div class="row">
+
+            <div class="col-md-4 col-12">
+
+                <img src="/img/1.jpg" style="height:350px">
+            </div>
+
+            <div class="col-md-6 col-12 mt-md-0 mt-3 offset-md-2 offset-lg-0 text-md-left display-4"
+                id="product-content">
+
+                <p>Name : <span id="name"><%= product.name %></span></p>
+                <p>Price : $<span id="price"><%= product.price %></span> <span id="dprice">
+                        $<%= product.dprice %></span> </p>
+
+                <button class="btn btn-primary" _id="<%= product._id %>" onclick="addToCartv2(this)">
+                    add to cart</button>
+                <button class="btn btn-info" _id="<%= product._id %>" onclick="addToWishListv2(this)">
+                    add to wish list</button>
+
+            </div>
+
+        </div>
+
+        <section class="mt-5" style="font-size: 18px">
+            <%= product.description %>
+
+        </section>
+
+    </div>
+
+    <script type="module" src="/js/src/product.js"></script>
+    <%- include('./includes/end.ejs') %>

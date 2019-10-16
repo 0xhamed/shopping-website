@@ -1,0 +1,14 @@
+<%- include('./includes/start.ejs') %>
+
+<%- include('./includes/nav.ejs') %>
+
+<!-- Page Content -->
+<div class="loading">
+    <div class="spinner-border spinner"></div>
+</div>
+
+<input type="text" id="role" value="<%= role %>" hidden>
+
+<script type="module" src="js/src/admin.js"></script>
+
+<%- include('./includes/end.ejs') %>

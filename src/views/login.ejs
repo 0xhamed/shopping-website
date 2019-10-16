@@ -1,0 +1,69 @@
+<%- include('./includes/start.ejs') %>
+
+<%- include('./includes/nav.ejs') %>
+
+
+<!-- loading -->
+<div class="loading d-none">
+    <div class="spinner-border spinner"></div>
+</div>
+
+<div class="container mt-5">
+    <% if(errorM) { %>
+    <div class="row">
+        <div class="col col-md-6 offset-md-3 text-center">
+            <div class="alert alert-danger">
+                <%= errorM %>
+            </div>
+        </div>
+    </div>
+    <% } %>
+
+    <% if (success) { %>
+    <div class="row">
+        <div class="col col-md-6 offset-md-3 text-center">
+            <div class="alert alert-success">
+                <%= success %>
+            </div>
+        </div>
+    </div>
+    <% } %>
+
+    <div class="row">
+        <div class="col col-md-6 offset-md-3 text-center">
+            <div class="alert" hidden>
+
+            </div>
+        </div>
+    </div>
+
+    <form id="login-form">
+        <div class="row ">
+            <div class="col col-md-6 offset-md-3">
+
+                <div class="form-group">
+                    <input type="email" class="form-control" name="email" placeholder="Email address" required
+                        autocomplete="email" autofocus>
+                </div>
+
+                <div class="form-group">
+                    <input type="password" class="form-control" name="password" placeholder="Password" required>
+                </div>
+
+                <div class="form-group">
+                    <div class="checkbox mb-3">
+                        <label><input type="checkbox" name="stayLogged" value="checked"> Remember me </label>
+                    </div>
+                </div>
+
+                <div class="form-group text-center">
+                    <button class="btn btn-primary btn-inline-block" type="submit">Sign in</button>
+                </div>
+            </div>
+    </form>
+</div>
+
+<script type="module" src="/js/src/auth.js"></script>
+
+
+<%- include('./includes/end.ejs') %>
