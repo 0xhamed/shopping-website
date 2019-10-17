@@ -14,18 +14,25 @@ Nodejs, Expressjs, MongoDB, EJS
 
 ### Control Management System:
 Profile: User can add/edit address and change his name,email etc..
+
 Products: Admin and Mods can view, add, edit and remove products.
+
 Users: Admin can view, add, edit, remove users.
+
 Orders: users can view their orders status and Admin/Mods can edit the status.
 
 ### Dynamic Pagination:
 Page items are Dynamically loaded
+
 Number of page items depends on client width
 
 ### Shopping Cart:
 View Shopping Cart items
+
 Increase/decrease Product quantity
+
 Dynamic prices are dependent on quantity
+
 Checkout with Paypal
 
 ### Wish List:
@@ -33,7 +40,9 @@ View/Remove Wishes
 
 ### Products:
 Add to Shopping Cart
+
 Add to Wish List
+
 View Products detials
 
 ### Register/Login/Logout
