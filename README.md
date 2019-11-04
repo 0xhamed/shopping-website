@@ -1,5 +1,7 @@
 ﻿# SRC255x - Online Store Project
 
+![p-i](https://user-images.githubusercontent.com/54107871/68121203-d551a200-ff0f-11e9-969d-0f10748a2326.png)
+
 ## Built with:
 
 ### Front-End:
