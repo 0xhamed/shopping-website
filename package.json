@@ -1,12 +1,12 @@
 {
-  "name": "src255x-online-store",
+  "name": "shopping-website",
   "version": "1.0.0",
-  "description": "SRC255x - Online Store",
+  "description": "MyShop - Online Store",
   "main": "src/index.js",
   "scripts": {
     "start": "node src/index.js"
   },
-  "author": "Mohammed Atef",
+  "author": "Muhammad Atef",
   "license": "MIT",
   "dependencies": {
     "@hapi/joi": "^16.1.5",
