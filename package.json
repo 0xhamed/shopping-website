@@ -6,7 +6,7 @@
   "scripts": {
     "start": "node src/index.js"
   },
-  "author": "Muhammad Atef",
+  "author": "Mohamed Hamed",
   "license": "MIT",
   "dependencies": {
     "@hapi/joi": "^16.1.5",
